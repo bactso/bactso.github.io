@@ -10,55 +10,26 @@ def html(f_name,title,audio):
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
     <script src="jquery.js"></script>
     <script src="bootstrap.js"></script>
-    <style>
-      body {
-      padding-top: 2em;
-      }
-      .speaking {
-      color:#30DFF3;
-      font-weight: bold;
-      }
-      .slidecontainer {
-      width: 100%%;
-      }
-      tr {
-         background-color: white;
-      }
-      .slider {
-      -webkit-appearance: none;
-      width: 100%%;
-      height: 1em;
-      border-radius: 0.5em;
-      background: #d3d3d3;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s;
-      }
-      .slider:hover {
-      opacity: 1;
-      }
-      .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 2em;
-      height: 2em;
-      border-radius: 50%%;
-      background: #30DFF3;
-      cursor: pointer;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
       <h3>%s</h3>
       <div class="slidecontainer">
-        <input type="range" min="1" max="20" value="1" class="slider" id="myRange">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
         Repeat <span id="demo"> times.</span>
       </div>
       <audio id="audio-player" src="%s" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
       <div>
         <input type="checkbox" id="nob">
         <label for="nob">Autoplay</label>
@@ -71,61 +42,7 @@ def html(f_name,title,audio):
       </table>
     </div>
   </body>
-  <script>
-  $( document ).ready(function() {
-    var player = document.getElementById('audio-player');
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    var nob = document.getElementById("nob");
-    var on = true;
-    var total = $('tr').length;
-    output.innerHTML = slider.value;
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
-    $('tr').click(function() {
-        play(player, this.id)
-    });
-    function play(player, id) {
-        var tr = $('#'+id);
-        $('table tr').css('background','white');
-        tr.css('background','#E8E8E8');
-        var start = tr.attr('data-start');
-        var end = tr.attr('data-end');
-        player.currentTime = start;
-        player.play();
-        player.ontimeupdate = function () {
-          if(player.currentTime >= end) {
-            player.pause();
-          }
-        };
-    }
-    function replay(p_no, cnt) {
-        if(!on) return;
-        if(cnt > slider.value) cnt = 1, p_no ++;
-        if(p_no > total) p_no = 1;
-        tr = $('#p'+p_no);
-        var start = tr.attr('data-start');
-        var end = tr.attr('data-end');
-        player.currentTime = start;
-        player.play();
-        player.ontimeupdate = function() {
-          if(player.currentTime >= end) {
-            player.pause();
-            replay(p_no, cnt+1);
-          }
-        };
-    }
-    $('#nob').change(function() {
-        if (nob.checked) {
-            on = true;
-            replay(1,1);
-        } else {
-            on = false;
-        }
-    });
-    });
-  </script>
+  <script src="bubugao.js"></script>
 </html>
 '''
 
@@ -143,11 +60,11 @@ def html(f_name,title,audio):
   for i in xrange(0,cnt,4):
     s,t = lines[i+1][:12], lines[i+1][-12:]
     s,t = to_second(s), to_second(t)
+    lrc = lines[i+2]
     o.write('''            <tr data-start="%s" data-end="%s" id="p%d">
-               <td>%d</td>
-               <td>%d</td>
+               <td>%s</td>
             </tr>
-'''%(s,t,j,j,j))
+'''%(s,t,j,lrc))
     j += 1
   o.write(footer)
   o.close()
