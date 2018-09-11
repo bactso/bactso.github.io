@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>2-2</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="1-2-2.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="12.180" data-end="13.620" id="p1">
+               <td>달력이 있습니까?</td>
+            </tr>
+            <tr data-start="13.620" data-end="15.620" id="p2">
+               <td>네, 있습니다.</td>
+            </tr>
+            <tr data-start="15.620" data-end="17.200" id="p3">
+               <td>지도도 있습니까?</td>
+            </tr>
+            <tr data-start="17.200" data-end="19.200" id="p4">
+               <td>아니요, 없습니다.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

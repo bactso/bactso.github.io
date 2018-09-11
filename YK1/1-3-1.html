@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>3-1</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="1-3-1.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="27.940" data-end="30.480" id="p1">
+               <td>제임스 씨, 무엇을 합니까?</td>
+            </tr>
+            <tr data-start="30.480" data-end="32.480" id="p2">
+               <td>가족 사진을 봅니다.</td>
+            </tr>
+            <tr data-start="32.860" data-end="34.860" id="p3">
+               <td>사진을 자주 봅니까?</td>
+            </tr>
+            <tr data-start="35.060" data-end="36.860" id="p4">
+               <td>아니요, 가끔 봅니다.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>
