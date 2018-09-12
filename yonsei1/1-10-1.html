@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>10-1</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="1-10-1.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="29.300" data-end="32.240" id="p1">
+               <td>웨이 씨, 방학이 언제예요?</td>
+            </tr>
+            <tr data-start="32.860" data-end="37.260" id="p2">
+               <td>6월 초에 수업이 끝나면 2주 동안 방학이에요.</td>
+            </tr>
+            <tr data-start="37.540" data-end="38.720" id="p3">
+               <td>그래요?</td>
+            </tr>
+            <tr data-start="38.980" data-end="41.280" id="p4">
+               <td>웨이 씨는 뭘 하실 거예요?</td>
+            </tr>
+            <tr data-start="42.020" data-end="45.040" id="p5">
+               <td>이번 방학에는 설악산에 가려고 해요.</td>
+            </tr>
+            <tr data-start="45.040" data-end="47.040" id="p6">
+               <td>등산을 하실 거예요?</td>
+            </tr>
+            <tr data-start="47.040" data-end="49.040" id="p7">
+               <td>아니요, 이번에는 사진을 찍으러 가요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

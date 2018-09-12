@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>9-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="1-9-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="13.360" data-end="16.460" id="p1">
+               <td>내일은 날씨가 어떨까요?</td>
+            </tr>
+            <tr data-start="16.460" data-end="19.720" id="p2">
+               <td>오늘보다 따뜻할 것 같아요.</td>
+            </tr>
+            <tr data-start="19.720" data-end="23.560" id="p3">
+               <td>미선 씨 고향은 겨울에 날씨가 어때요?</td>
+            </tr>
+            <tr data-start="23.560" data-end="27.280" id="p4">
+               <td>남쪽이니까 서울보다 따뜻해요.</td>
+            </tr>
+            <tr data-start="27.280" data-end="30.080" id="p5">
+               <td>여름에는 날씨가 어때요?</td>
+            </tr>
+            <tr data-start="30.200" data-end="31.280" id="p6">
+               <td>더워요?</td>
+            </tr>
+            <tr data-start="31.280" data-end="33.280" id="p7">
+               <td>네, 덥고 비가 많이 와요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

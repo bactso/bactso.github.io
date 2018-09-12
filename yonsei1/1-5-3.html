@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>5-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="1-5-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="12.420" data-end="15.080" id="p1">
+               <td>아침에 몇 시에 일어나세요?</td>
+            </tr>
+            <tr data-start="15.080" data-end="17.080" id="p2">
+               <td>7시 반에 일어나요.</td>
+            </tr>
+            <tr data-start="17.080" data-end="19.580" id="p3">
+               <td>아침을 먹고 학교에 가세요?</td>
+            </tr>
+            <tr data-start="19.580" data-end="22.300" id="p4">
+               <td>아니요, 아침은 안 먹어요.</td>
+            </tr>
+            <tr data-start="22.300" data-end="24.300" id="p5">
+               <td>수업은 날마다 있어요?</td>
+            </tr>
+            <tr data-start="24.300" data-end="26.300" id="p6">
+               <td>네, 월요일부터 금요일까지 있어요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>6-4</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="1-6-4.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="12.440" data-end="14.760" id="p1">
+               <td>장미꽃 10송이 주세요.</td>
+            </tr>
+            <tr data-start="14.760" data-end="17.480" id="p2">
+               <td>누구에게 선물합니까?</td>
+            </tr>
+            <tr data-start="17.480" data-end="19.480" id="p3">
+               <td>친구에게 선물해요.</td>
+            </tr>
+            <tr data-start="19.480" data-end="21.480" id="p4">
+               <td>친구가 좋아하는 꽃이에요.</td>
+            </tr>
+            <tr data-start="21.480" data-end="23.480" id="p5">
+               <td>여기 있습니다.</td>
+            </tr>
+            <tr data-start="23.480" data-end="25.480" id="p6">
+               <td>15000원입니다.</td>
+            </tr>
+            <tr data-start="25.480" data-end="26.720" id="p7">
+               <td>좀 비싸요.</td>
+            </tr>
+            <tr data-start="26.720" data-end="28.720" id="p8">
+               <td>깎아 주세요.</td>
+            </tr>
+            <tr data-start="28.720" data-end="30.720" id="p9">
+               <td>그럼 14000원 주십시오.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>
