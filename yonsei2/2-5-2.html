@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>5-2</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-5-2.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="15.300" data-end="20.040" id="p1">
+               <td>경복궁역에 가려면 몇 번 버스를 타야 합니까?</td>
+            </tr>
+            <tr data-start="20.560" data-end="24.800" id="p2">
+               <td>파란색 272번 버스를 타세요.</td>
+            </tr>
+            <tr data-start="25.340" data-end="28.840" id="p3">
+               <td>경복궁역까지 얼마나 걸려요?</td>
+            </tr>
+            <tr data-start="29.360" data-end="32.820" id="p4">
+               <td>한 30분쯤 걸릴 거예요.</td>
+            </tr>
+            <tr data-start="33.220" data-end="36.040" id="p5">
+               <td>30분이나요?</td>
+            </tr>
+            <tr data-start="36.040" data-end="38.040" id="p6">
+               <td>보통 출퇴근 시간에는 그 정도 걸려요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

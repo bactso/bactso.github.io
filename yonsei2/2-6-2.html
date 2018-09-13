@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>6-2</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-6-2.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="14.140" data-end="16.580" id="p1">
+               <td>환전을 하려고 하는데요.</td>
+            </tr>
+            <tr data-start="16.820" data-end="19.520" id="p2">
+               <td>어느 나라 돈을 바꾸실 거예요?</td>
+            </tr>
+            <tr data-start="19.780" data-end="22.400" id="p3">
+               <td>달러를 원으로 바꾸려고 합니다.</td>
+            </tr>
+            <tr data-start="22.800" data-end="24.680" id="p4">
+               <td>환율이 어떻게 됩니까?</td>
+            </tr>
+            <tr data-start="25.380" data-end="28.780" id="p5">
+               <td>지난주에 비해서 조금 떨어졌어요.</td>
+            </tr>
+            <tr data-start="29.060" data-end="33.300" id="p6">
+               <td>이 서류에 이름과 여권 번호를 적으세요.</td>
+            </tr>
+            <tr data-start="33.760" data-end="36.000" id="p7">
+               <td>두 가지만 쓰면 됩니까?</td>
+            </tr>
+            <tr data-start="36.000" data-end="38.000" id="p8">
+               <td>네, 처리하는 동안 잠시만 기다려 주십시오.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>1-2</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-1-2.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="14.500" data-end="18.400" id="p1">
+               <td>이 회사에서 일한 지 얼마나 되셨습니까?</td>
+            </tr>
+            <tr data-start="19.300" data-end="21.080" id="p2">
+               <td>4년 됐어요.</td>
+            </tr>
+            <tr data-start="21.280" data-end="24.440" id="p3">
+               <td>대학을 졸업하고 일을 시작했어요.</td>
+            </tr>
+            <tr data-start="25.240" data-end="31.320" id="p4">
+               <td>저는 경영학을 공부했는데 정희 씨는 전공이 뭐예요?</td>
+            </tr>
+            <tr data-start="31.320" data-end="33.320" id="p5">
+               <td>전공요?</td>
+            </tr>
+            <tr data-start="33.320" data-end="35.320" id="p6">
+               <td>저도 경영학이에요.</td>
+            </tr>
+            <tr data-start="36.520" data-end="38.760" id="p7">
+               <td>회사일은 어때요?</td>
+            </tr>
+            <tr data-start="38.760" data-end="40.760" id="p8">
+               <td>배우는 것도 많고 일도 재미있어요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

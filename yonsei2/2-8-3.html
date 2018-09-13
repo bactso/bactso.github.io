@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>8-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-8-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="14.720" data-end="17.640" id="p1">
+               <td>콧물이 많이 나서 왔는데요.</td>
+            </tr>
+            <tr data-start="17.840" data-end="22.100" id="p2">
+               <td>약을 사기 위해서는 처방전이 있어야 합니다.</td>
+            </tr>
+            <tr data-start="22.300" data-end="26.560" id="p3">
+               <td>약을 살 때 항상 처방전이 있어야 합니까?</td>
+            </tr>
+            <tr data-start="26.800" data-end="31.640" id="p4">
+               <td>그런 것은 아니지만 아무 약이나 드시면 안 되니까요.</td>
+            </tr>
+            <tr data-start="32.020" data-end="36.280" id="p5">
+               <td>우선 처방전 없이 받을 수 있는 약을 주십시오.</td>
+            </tr>
+            <tr data-start="36.280" data-end="38.280" id="p6">
+               <td>오늘은 종합 감기약만 드리겠습니다.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

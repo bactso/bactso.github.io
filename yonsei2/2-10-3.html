@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>10-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-10-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="13.360" data-end="17.120" id="p1">
+               <td>오늘은 걸레로 닦기만 하면 안 될까?</td>
+            </tr>
+            <tr data-start="17.440" data-end="21.960" id="p2">
+               <td>먼지가 많으니까 날마다 청소기를 돌리는 게 좋아.</td>
+            </tr>
+            <tr data-start="22.200" data-end="23.360" id="p3">
+               <td>알았어.</td>
+            </tr>
+            <tr data-start="23.580" data-end="27.400" id="p4">
+               <td>깔끔한 룸메이트 덕분에 집이 깨끗해지겠다.</td>
+            </tr>
+            <tr data-start="27.700" data-end="32.780" id="p5">
+               <td>집이 깨끗하면 기분도 좋고 공부도 더 잘 될 거야.</td>
+            </tr>
+            <tr data-start="32.980" data-end="35.840" id="p6">
+               <td>우리 음악을 들으면서 청소할까?</td>
+            </tr>
+            <tr data-start="36.220" data-end="41.460" id="p7">
+               <td>그래. 그런데 신문지하고 빈 병은 어떻게 할까?</td>
+            </tr>
+            <tr data-start="41.460" data-end="43.460" id="p8">
+               <td>재활용 쓰레기는 화요일에 버려야 하니까 저 상자에 넣어.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

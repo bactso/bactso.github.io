@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>7-2</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-7-2.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="14.660" data-end="17.280" id="p1">
+               <td>왜 리에 씨가 안 오지요?</td>
+            </tr>
+            <tr data-start="17.860" data-end="19.580" id="p2">
+               <td>곧 오겠지.</td>
+            </tr>
+            <tr data-start="19.720" data-end="23.040" id="p3">
+               <td>그런데 메시지는 확인해 봤어?</td>
+            </tr>
+            <tr data-start="24.000" data-end="25.020" id="p4">
+               <td>메시지요?</td>
+            </tr>
+            <tr data-start="25.440" data-end="27.640" id="p5">
+               <td>아직 확인 못해 봤어요.</td>
+            </tr>
+            <tr data-start="27.640" data-end="29.640" id="p6">
+               <td>잠깐만요.</td>
+            </tr>
+            <tr data-start="29.640" data-end="31.640" id="p7">
+               <td>뭐라고 해?</td>
+            </tr>
+            <tr data-start="32.240" data-end="35.060" id="p8">
+               <td>일이 밀려서 조금 늦게 온다고 해요.</td>
+            </tr>
+            <tr data-start="35.060" data-end="37.060" id="p9">
+               <td>벌써 30분이 지났으니까 전화해서 어디에 있냐고 물어봐야겠다.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

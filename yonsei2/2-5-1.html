@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>5-1</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-5-1.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="22.460" data-end="27.020" id="p1">
+               <td>주말에 친구들과 같이 놀이 공원에 가려고 해요.</td>
+            </tr>
+            <tr data-start="27.640" data-end="30.560" id="p2">
+               <td>놀이 공원에 어떻게 가는지 아세요?</td>
+            </tr>
+            <tr data-start="31.120" data-end="35.660" id="p3">
+               <td>아니요. 여기에서 직접 가는 버스가 있어요?</td>
+            </tr>
+            <tr data-start="36.400" data-end="40.740" id="p4">
+               <td>직접 가는 버스는 없으니까 지하철을 타세요.</td>
+            </tr>
+            <tr data-start="41.140" data-end="44.640" id="p5">
+               <td>지하철은 한 번만 타면 돼요?</td>
+            </tr>
+            <tr data-start="44.920" data-end="50.180" id="p6">
+               <td>아니요. 충무로에서 4호선으로 갈아타야 돼요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

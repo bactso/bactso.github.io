@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>2-1</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-2-1.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="21.380" data-end="24.840" id="p1">
+               <td>리에 씨, 설렁탕을 먹어 봤어요?</td>
+            </tr>
+            <tr data-start="24.840" data-end="28.120" id="p2">
+               <td>아니요, 먹어 보지 못했어요.</td>
+            </tr>
+            <tr data-start="28.120" data-end="30.120" id="p3">
+               <td> 어떻게 먹는 거예요?</td>
+            </tr>
+            <tr data-start="30.820" data-end="35.240" id="p4">
+               <td>소금과 파를 좀 넣고 밥을 말아서 드세요.</td>
+            </tr>
+            <tr data-start="35.240" data-end="37.760" id="p5">
+               <td>반찬은 어디에 있어요?</td>
+            </tr>
+            <tr data-start="37.760" data-end="40.480" id="p6">
+               <td>여기 큰 그릇에 있어요.</td>
+            </tr>
+            <tr data-start="40.480" data-end="43.400" id="p7">
+               <td>접시에 덜어서 먹어야 해요.</td>
+            </tr>
+            <tr data-start="43.400" data-end="45.400" id="p8">
+               <td>아, 여기 있군요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

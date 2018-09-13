@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>10-2</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-10-2.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="14.560" data-end="17.480" id="p1">
+               <td>우리가 짐을 싸야 돼?</td>
+            </tr>
+            <tr data-start="18.100" data-end="23.600" id="p2">
+               <td>이삿짐센터에서 해 주지만 중요한 물건은 우리가 싸는 게 나아.</td>
+            </tr>
+            <tr data-start="24.060" data-end="29.020" id="p3">
+               <td>포장이사를 하면 우리는 아무 일도 안 하는 줄 알았어.</td>
+            </tr>
+            <tr data-start="29.280" data-end="33.000" id="p4">
+               <td>이제 거의 다 끝났으니까 조금만 참아.</td>
+            </tr>
+            <tr data-start="33.300" data-end="36.340" id="p5">
+               <td>힘들어서 병이 날 것 같아.</td>
+            </tr>
+            <tr data-start="36.340" data-end="38.340" id="p6">
+               <td>아이처럼 엄살 부리지 말고 빨리 해.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

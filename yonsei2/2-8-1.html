@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>8-1</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-8-1.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="24.080" data-end="27.320" id="p1">
+               <td>선생님, 배가 아파서 왔는데요.</td>
+            </tr>
+            <tr data-start="27.560" data-end="29.780" id="p2">
+               <td>심하게 아프세요?</td>
+            </tr>
+            <tr data-start="30.540" data-end="33.400" id="p3">
+               <td>너무 아파서 잠을 못 잤어요.</td>
+            </tr>
+            <tr data-start="33.400" data-end="35.400" id="p4">
+               <td>화장실에도 자주 가고요.</td>
+            </tr>
+            <tr data-start="36.080" data-end="38.220" id="p5">
+               <td>어디 봅시다.</td>
+            </tr>
+            <tr data-start="38.900" data-end="41.640" id="p6">
+               <td>식중독인 것 같군요.</td>
+            </tr>
+            <tr data-start="42.020" data-end="47.160" id="p7">
+               <td>국에다가 해물을 넣어서 끓여 먹었는데 그것 때문인가요?</td>
+            </tr>
+            <tr data-start="47.160" data-end="49.160" id="p8">
+               <td>그런 것 같군요.</td>
+            </tr>
+            <tr data-start="49.160" data-end="51.160" id="p9">
+               <td>약을 드시고 낫지 않으면 이틀 후에 다시 오세요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>5-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-5-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="14.860" data-end="20.420" id="p1">
+               <td>아저씨, 이쪽에서 타면 과천에 갈 수 있어요?</td>
+            </tr>
+            <tr data-start="21.000" data-end="24.160" id="p2">
+               <td>아니요, 잘못 오셨어요.</td>
+            </tr>
+            <tr data-start="24.500" data-end="27.380" id="p3">
+               <td>반대쪽 승강장오로 가셔야 돼요.</td>
+            </tr>
+            <tr data-start="28.520" data-end="32.280" id="p4">
+               <td>반대쪽으로 어떻게 가나요?</td>
+            </tr>
+            <tr data-start="32.620" data-end="37.200" id="p5">
+               <td> 밖으로 나갔다가 다른 쪽으로 다시 들어가셔야 합니다.</td>
+            </tr>
+            <tr data-start="37.980" data-end="40.820" id="p6">
+               <td>요금을 다시 내야 하나요?</td>
+            </tr>
+            <tr data-start="41.720" data-end="46.020" id="p7">
+               <td>역무원에게 이야기하면 안 내도 될 거예요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

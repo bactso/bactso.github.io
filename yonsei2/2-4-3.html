@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>4-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-4-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="13.420" data-end="16.220" id="p1">
+               <td>형, 이거 받으세요.</td>
+            </tr>
+            <tr data-start="16.220" data-end="18.220" id="p2">
+               <td>제 청첩장이에요.</td>
+            </tr>
+            <tr data-start="18.880" data-end="20.780" id="p3">
+               <td>청첩장?</td>
+            </tr>
+            <tr data-start="20.780" data-end="22.780" id="p4">
+               <td>너 결혼하니?</td>
+            </tr>
+            <tr data-start="23.200" data-end="28.080" id="p5">
+               <td>부모님께서 연세가 많으셔서 좀 서둘렀어요.</td>
+            </tr>
+            <tr data-start="28.080" data-end="30.080" id="p6">
+               <td>축하한다.</td>
+            </tr>
+            <tr data-start="30.420" data-end="33.760" id="p7">
+               <td>결혼 준비를 하려면 바쁘겠구나.</td>
+            </tr>
+            <tr data-start="33.980" data-end="39.000" id="p8">
+               <td>부모님과 같이 살기로 해서 준비할 게 별로 없어요.</td>
+            </tr>
+            <tr data-start="39.000" data-end="41.000" id="p9">
+               <td>내가 도와줄 일이 있으면 연락해라.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

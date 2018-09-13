@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>2-4</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-2-4.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="13.840" data-end="17.540" id="p1">
+               <td>한국에서는 식사할 때 어떻게 해야 돼요?</td>
+            </tr>
+            <tr data-start="18.300" data-end="22.820" id="p2">
+               <td>윗사람이 식사를 시작할 때까지 기다려야 해요.</td>
+            </tr>
+            <tr data-start="23.020" data-end="28.360" id="p3">
+               <td>아, 그래요. 또 다른 예절은 없어요?</td>
+            </tr>
+            <tr data-start="28.360" data-end="31.840" id="p4">
+               <td>밥그릇을 들고 먹으면 안 돼요.</td>
+            </tr>
+            <tr data-start="31.840" data-end="33.840" id="p5">
+               <td> 재미있군요.</td>
+            </tr>
+            <tr data-start="34.120" data-end="38.760" id="p6">
+               <td>젓가락과 숟가락을 양손에 들고 먹어도 돼요?</td>
+            </tr>
+            <tr data-start="38.760" data-end="40.760" id="p7">
+               <td>아니요, 왼손은 내려놓고 오른손만 써야 돼요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

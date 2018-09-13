@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>9-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-9-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="15.540" data-end="19.940" id="p1">
+               <td>이번 금요일에 방을 예약할 수 있습니까?</td>
+            </tr>
+            <tr data-start="20.400" data-end="25.200" id="p2">
+               <td>특실이 있고 일반실이 있는데 어떤 방을 원하십니까?</td>
+            </tr>
+            <tr data-start="25.680" data-end="30.860" id="p3">
+               <td>오랜만에 가는 여행이니까 좋은 방에서 묵고 싶습니다.</td>
+            </tr>
+            <tr data-start="31.500" data-end="33.880" id="p4">
+               <td>방의 전망은 좋은가요?</td>
+            </tr>
+            <tr data-start="34.500" data-end="39.760" id="p5">
+               <td>경주에서 저희 호텔만큼 전망 좋은 호텔은 없습니다.</td>
+            </tr>
+            <tr data-start="40.540" data-end="43.900" id="p6">
+               <td>그런데, 며칠 동안 계실 겁니까?</td>
+            </tr>
+            <tr data-start="44.320" data-end="46.380" id="p7">
+               <td>이틀 묵을 거예요.</td>
+            </tr>
+            <tr data-start="46.380" data-end="48.380" id="p8">
+               <td>성함과 연락처를 말씀해 주십시오.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

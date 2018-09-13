@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>7-1</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-7-1.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="22.780" data-end="24.000" id="p1">
+               <td>여보세요?</td>
+            </tr>
+            <tr data-start="24.220" data-end="26.620" id="p2">
+               <td>영수 씨, 웬일이에요?</td>
+            </tr>
+            <tr data-start="27.020" data-end="32.680" id="p3">
+               <td>제임스 씨가 이번 주 토요일에 연극을 보자고 하는데 같이 갈래요?</td>
+            </tr>
+            <tr data-start="32.800" data-end="34.120" id="p4">
+               <td>좋아요.</td>
+            </tr>
+            <tr data-start="34.280" data-end="37.580" id="p5">
+               <td>그런데 연극표는 비싸지 않아요?</td>
+            </tr>
+            <tr data-start="38.040" data-end="42.660" id="p6">
+               <td>제임스 씨한테 초대권이 있어서 무료로 볼 수 있어요.</td>
+            </tr>
+            <tr data-start="43.000" data-end="45.480" id="p7">
+               <td>그것 참 잘 됐군요.</td>
+            </tr>
+            <tr data-start="45.600" data-end="48.060" id="p8">
+               <td>그럼 몇 시에 만날까요?</td>
+            </tr>
+            <tr data-start="48.060" data-end="50.060" id="p9">
+               <td>4시에 국립극장 매표소 앞에서 만나요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

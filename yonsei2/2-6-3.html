@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>6-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="2-6-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="13.560" data-end="16.940" id="p1">
+               <td>일본에 소포를 보내려고 합니다.</td>
+            </tr>
+            <tr data-start="17.300" data-end="19.980" id="p2">
+               <td>저울에 물건을 올려 놓으세요.</td>
+            </tr>
+            <tr data-start="20.480" data-end="25.360" id="p3">
+               <td>물건이 없어지거나 이상이 생기면 어떻게 합니까?</td>
+            </tr>
+            <tr data-start="25.760" data-end="28.560" id="p4">
+               <td>비싼 물건이면 보험에 드세요.</td>
+            </tr>
+            <tr data-start="29.100" data-end="34.620" id="p5">
+               <td>비싸지 않습니다만 잃어버리면 안 되니까 보험에 들게요.</td>
+            </tr>
+            <tr data-start="34.620" data-end="36.620" id="p6">
+               <td>보험료까지 모두 30000원입니다.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>
