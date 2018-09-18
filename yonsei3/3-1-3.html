@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>1-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="3-1-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="8.200" data-end="11.380" id="p1">
+               <td>제임스, 어떤 동아리에 들 거야?</td>
+            </tr>
+            <tr data-start="11.380" data-end="13.380" id="p2">
+               <td>아직 못 정했어.</td>
+            </tr>
+            <tr data-start="13.380" data-end="15.380" id="p3">
+               <td>어떤 동아리가 좋을까?</td>
+            </tr>
+            <tr data-start="15.420" data-end="21.300" id="p4">
+               <td>넌 한국 문화에 관심이 있으니까 탈춤반이나 전통 음악반이 어때?</td>
+            </tr>
+            <tr data-start="21.720" data-end="29.380" id="p5">
+               <td>글쎄, 지난 번에 소개하는 것을 들었는데도 어떤 동아리에 들어가야 할지 결정을 못하겠어.</td>
+            </tr>
+            <tr data-start="29.380" data-end="34.880" id="p6">
+               <td>그럼 학교 홈페이지에 들어가서 동아리 소개를 한번 찾아 봐.</td>
+            </tr>
+            <tr data-start="34.880" data-end="37.380" id="p7">
+               <td>사진하고 동영상도 있어.</td>
+            </tr>
+            <tr data-start="37.380" data-end="39.380" id="p8">
+               <td>아, 맞다.</td>
+            </tr>
+            <tr data-start="39.380" data-end="44.100" id="p9">
+               <td>홈페이지에 들어가기만 하면 다 나오는데 괜히 고민했네.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>

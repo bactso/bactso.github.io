@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>4-3</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="3-4-3.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="10.400" data-end="12.580" id="p1">
+               <td>오늘 공연 어땠어요?</td>
+            </tr>
+            <tr data-start="12.580" data-end="14.580" id="p2">
+               <td>감동적이었어요.</td>
+            </tr>
+            <tr data-start="14.760" data-end="18.460" id="p3">
+               <td>특히 남자 주인공의 목소리가 멋지지 않았어요?</td>
+            </tr>
+            <tr data-start="19.220" data-end="23.780" id="p4">
+               <td>그래요, 목소리도 멋질 뿐만 아니라 연기도 훌륭했어요.</td>
+            </tr>
+            <tr data-start="23.780" data-end="25.780" id="p5">
+               <td>대사도 재미있었고요.</td>
+            </tr>
+            <tr data-start="26.420" data-end="29.340" id="p6">
+               <td>리에 씨는 어느 장면이 제일 좋았어요?</td>
+            </tr>
+            <tr data-start="29.580" data-end="35.100" id="p7">
+               <td>저는 두 주인공이 다시 만나는 마지막 장면이 제일 인상적이었어요.</td>
+            </tr>
+            <tr data-start="35.760" data-end="36.920" id="p8">
+               <td>저도요.</td>
+            </tr>
+            <tr data-start="37.380" data-end="45.580" id="p9">
+               <td>저는 이번이 한국에서 본 첫 공연인데 '다음에 좋은 공연이 있으면 또 봐야지'하고 생각했어요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>
