@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>10-4</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="3-10-4.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="9.800" data-end="12.000" id="p1">
+               <td>신문 보셨어요?</td>
+            </tr>
+            <tr data-start="12.000" data-end="15.220" id="p2">
+               <td>드디어 새로운 가사 로봇이 판매된다고 해요.</td>
+            </tr>
+            <tr data-start="15.220" data-end="18.560" id="p3">
+               <td>그래요? 무슨 일을 하는 로봇인데요?</td>
+            </tr>
+            <tr data-start="18.900" data-end="22.580" id="p4">
+               <td>집안일은 물론 아이를 돌보기까지 한대요.</td>
+            </tr>
+            <tr data-start="22.580" data-end="26.920" id="p5">
+               <td>그래도 로봇이 하는 일이 사람이 하는 것만 할까요?</td>
+            </tr>
+            <tr data-start="27.060" data-end="30.980" id="p6">
+               <td>사람이 하듯이 아주 완벽하게 잘 한답니다.</td>
+            </tr>
+            <tr data-start="31.540" data-end="37.800" id="p7">
+               <td>그런 다양한 기능을 가진 로봇이 나오다니, 세상 참 좋아졌어요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>
