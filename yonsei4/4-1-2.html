@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bubugao.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>1-2</h3>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="20" value="3" class="slider" id="myRange">
+      </div>
+      <div>
+        Repeat <span id="demo"> times.</span>
+      </div>
+      <audio id="audio-player" src="4-1-2.mp3" controls="controls"></audio>
+      <div class="slidecontainer">
+        <input type="range" min="10" max="30" value="10" class="slider" id="rate">
+      </div>
+      <div>
+        Speed x<span id="trate"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="nob">
+        <label for="nob">Autoplay</label>
+      </div>
+      <table class="table">
+         <tbody>
+            <tr data-start="15.000" data-end="21.600" id="p1">
+               <td>제임스 씨, 오늘 저한테 아주 중요한 분을 만나는데 같이 가실래요?</td>
+            </tr>
+            <tr data-start="21.600" data-end="24.000" id="p2">
+               <td>소개해 드리고 싶어서요.</td>
+            </tr>
+            <tr data-start="24.560" data-end="27.300" id="p3">
+               <td>마리아 씨가 그렇게 말하니 궁금하네요.</td>
+            </tr>
+            <tr data-start="27.300" data-end="29.300" id="p4">
+               <td>어떤 분인데요?</td>
+            </tr>
+            <tr data-start="29.660" data-end="34.580" id="p5">
+               <td>제가 힘들고 외로울 때마다 큰 도움을 주셨던 분이에요.</td>
+            </tr>
+            <tr data-start="34.780" data-end="39.420" id="p6">
+               <td>그 분이 없었더라면 아마 지금의 저도 없었을 거예요.</td>
+            </tr>
+            <tr data-start="39.420" data-end="41.160" id="p7">
+               <td>그래요?</td>
+            </tr>
+            <tr data-start="41.340" data-end="45.520" id="p8">
+               <td>마리아 씨의 인생에 아주 큰 영향을 끼치신 분이군요.</td>
+            </tr>
+            <tr data-start="45.940" data-end="51.060" id="p9">
+               <td>네, 그 분은 정말 저희 어머니나 다름없는 분이에요.</td>
+            </tr>
+            <tr data-start="51.340" data-end="55.500" id="p10">
+               <td>그런 분이 계시다니 마리아 씨가 정말 부러운데요.</td>
+            </tr>
+            <tr data-start="55.740" data-end="59.320" id="p11">
+               <td>가면서 그 분에 대해 좀 더 얘기해 주세요.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="bubugao.js"></script>
+</html>
